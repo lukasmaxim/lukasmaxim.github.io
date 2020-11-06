@@ -1,28 +1,40 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Main/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Main from './components/Main.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Main
   }
 }
 </script>
 
 <style>
+* {
+  background-color: #0D0F11;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Archivo-Bold', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #FFFFFF;
   margin-top: 60px;
 }
+@font-face {
+    font-family: 'Archivo-Bold';
+    src:url('./assets/fonts/Archivo-Bold.ttf.woff') format('woff'),
+        url('./assets/fonts/Archivo-Bold.ttf.svg#Archivo-Bold') format('svg'),
+        url('./assets/fonts/Archivo-Bold.ttf.eot'),
+        url('./assets/fonts/Archivo-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 </style>
