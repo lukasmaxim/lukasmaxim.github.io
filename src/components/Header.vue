@@ -12,6 +12,10 @@
       <div class="line" id="line2" />
       <div class="line" id="line3" />
     </div>
+    <div class="divider">■</div>
+    <a href="https://github.com/lukasmaxim" class="link">GitHub</a>
+    <a href="mailto:lmasopust@ucdavis.edu" class="link">l.masopust at me.com</a>
+    <a href="https://github.com/lukasmaxim" class="link">GitHub</a>
   </div>
 </template>
 
@@ -22,12 +26,19 @@ export default {
 </script>
 
 <style>
+a {
+    font-weight: 900;
+}
+.divider {
+    grid-area: divider;
+}
 .grid-container {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 0.3fr;
   grid-template-areas:
     ". name button1 button2 button3 ."
-    "line line line line line line";
+    "line line line line line line"
+    /* ". link divider link divider ."; */
 }
 .name {
   margin: auto;
@@ -35,28 +46,40 @@ export default {
   font-size: 30pt;
   text-align: left;
 }
+.button {
+  grid-area: button;
+}
 button {
-    height: 50px;
-  border: 0.2em solid #D8D8D8;
+  position: relative;
+  left: 50%;
+  height: fit-content;
+  width: fit-content;
+  padding: 1em;
+  border: 0.15em solid #393939;
   border-radius: 0.3em;
   cursor: pointer;
+  font-family: "roboto mono";
+  font-weight: 500;
+  color: #393939;
+  justify-content: center;
 }
 #button1 {
-    grid-area: button1;
+  grid-area: button1;
 }
 #button2 {
-    grid-area: button2;
+  grid-area: button2;
 }
 #button3 {
-    grid-area: button3;
+  grid-area: button3;
 }
 .line-container {
+    margin-top: 1em;
   grid-area: line;
   vertical-align: top;
   height: 10em;
 }
 .line {
-  height: 1em;
+  height: 0.7em;
 }
 #line1 {
   background-color: #f4ac0a;
@@ -73,7 +96,8 @@ button {
 .point-2 {
   grid-area: point-2;
 }
-.button {
-  grid-area: button;
+.link {
+    grid-area: link;
 }
+
 </style>

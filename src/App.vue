@@ -20,7 +20,7 @@ export default {
   background-color: #FFF1DF;
 }
 #app {
-  font-family: 'Lovelo', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Roboto Mono', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   /* text-align: center; */
@@ -28,17 +28,9 @@ export default {
   margin-top: 60px;
 }
 @font-face {
-    font-family: 'Archivo-Bold';
-    src:url('./assets/fonts/Archivo-Bold.ttf.woff') format('woff'),
-        url('./assets/fonts/Archivo-Bold.ttf.svg#Archivo-Bold') format('svg'),
-        url('./assets/fonts/Archivo-Bold.ttf.eot'),
-        url('./assets/fonts/Archivo-Bold.ttf.eot?#iefix') format('embedded-opentype'); 
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
     font-family: 'Lovelo';
     src: url('./assets/fonts/Lovelo_Black.ttf') format('truetype');
 }
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 
 </style>
