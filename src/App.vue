@@ -36,5 +36,9 @@ export default {
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'Lovelo';
+    src: url('./assets/fonts/Lovelo_Black.ttf') format('truetype');
+}
 
 </style>
