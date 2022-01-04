@@ -1,30 +1,30 @@
 <template>
   <div id="app">
-    <Main/>
+    <Header/>
   </div>
 </template>
 
 <script>
-import Main from './components/Main.vue'
+import Header from './components/Header.vue'
 
 export default {
   name: 'App',
   components: {
-    Main
+    Header
   }
 }
 </script>
 
 <style>
 * {
-  background-color: #0D0F11;
+  background-color: #FFF1DF;
 }
 #app {
-  font-family: 'Archivo-Bold', Avenir, Helvetica, Arial, sans-serif;
+  font-family: 'Lovelo', Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #FFFFFF;
+  /* text-align: center; */
+  color: #444444;
   margin-top: 60px;
 }
 @font-face {
