@@ -1,19 +1,20 @@
 <template>
   <div id="app">
     <Header/>
-    <Content/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-import Content from './components/Content.vue'
+// import Landing from './components/Landing.vue'
+// import Research from './components/Research.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    Content
+    // Landing
   }
 }
 </script>
@@ -28,7 +29,7 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #444444;
   margin-top: 40px;
-
+  min-height: 100vh;
 }
 html, body {
   margin: 0 !important;
@@ -38,7 +39,7 @@ html, body {
     src: url('./assets/fonts/Lovelo_Black.ttf') format('truetype');
 }
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
-button {
+router-link, button {
   height: fit-content;
   width: fit-content;
   padding: 1em;

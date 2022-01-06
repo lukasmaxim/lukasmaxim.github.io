@@ -5,9 +5,10 @@
       <div>MASOPUST</div>
     </div>
     <div id="button-container">
-      <button id="button1">Research</button>
+      <router-link to="research" id="button1">Research</router-link>
       <button id="button2">Curriculum Vitae</button>
       <button id="button3">Portfolio</button>
+      <!-- <router-link to="research">Test</router-link> -->
     </div>
     <div id="line-container">
       <div class="line" id="line1" />
