@@ -4,13 +4,13 @@
 
 <script>
 export default {
-  name: "Landing"
+  name: "CV"
 };
 </script>
 
 <style scoped>
 #container {
-  background-color: black;
-  height: 10em;
+  background-color: orangered;
+  height: 100%;
 }
 </style>

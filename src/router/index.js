@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Landing from '../components/Landing.vue'
+import Landing from '../components/views/Landing.vue'
 
 Vue.use(VueRouter)
 
@@ -16,7 +16,23 @@ const routes = [
     // route level code-splitting
     // this generates a separate chunk (about.[hash].js) for this route
     // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../components/Research.vue')
+    component: () => import(/* webpackChunkName: "about" */ '../components/views/Research.vue')
+  },
+  {
+    path: 'cv',
+    name: 'cv',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../components/views/CV.vue')
+  },
+  {
+    path: '/portfolio',
+    name: 'portfolio',
+    // route level code-splitting
+    // this generates a separate chunk (about.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import(/* webpackChunkName: "about" */ '../components/views/Portfolio.vue')
   }
 ]
 

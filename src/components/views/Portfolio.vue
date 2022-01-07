@@ -4,13 +4,13 @@
 
 <script>
 export default {
-  name: "Research"
+  name: "Portfolio"
 };
 </script>
 
 <style scoped>
 #container {
-  background-color: yellow;
-  height: 10em;
+  background-color: rgb(255, 125, 251);
+  height: 100%;
 }
 </style>

@@ -5,10 +5,15 @@
       <div>MASOPUST</div>
     </div>
     <div id="button-container">
-      <router-link to="research" id="button1">Research</router-link>
-      <button id="button2">Curriculum Vitae</button>
-      <button id="button3">Portfolio</button>
-      <!-- <router-link to="research">Test</router-link> -->
+      <router-link to="research" tag="button" id="button1"
+        >Research</router-link
+      >
+      <router-link to="cv" tag="button" id="button2"
+        >Curriculum Vitae</router-link
+      >
+      <router-link to="portfolio" tag="button" id="button3"
+        >Portfolio</router-link
+      >
     </div>
     <div id="line-container">
       <div class="line" id="line1" />
@@ -35,6 +40,7 @@ export default {
 
 <style>
 .grid-container {
+  margin-top: 40px;
   display: grid;
   grid-template-columns: 0.3fr 1fr 1fr 1fr 1fr 1fr 0.3fr;
   grid-template-areas:
@@ -50,7 +56,7 @@ export default {
   gap: 1.5em;
 }
 #name {
-    font-family: Lovelo;
+  font-family: Lovelo;
   margin: auto;
   grid-area: name;
   font-size: 30pt;
@@ -75,8 +81,9 @@ export default {
   background-color: #570d49;
 }
 #link-container {
-    grid-area: links;
-    display: flex;
-    justify-content: space-around;
+  grid-area: links;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 1em;
 }
 </style>
