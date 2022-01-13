@@ -1,7 +1,7 @@
 <template>
   <div id="container">
     <div id="photo-container">
-      <!-- <img src="./src/assets/images/portrait.png"/> -->
+      <img src="../../assets/images/portrait.png"/> <!-- TODO absolute paths -->
     </div>
     <div id="text-container">
       Text
@@ -29,5 +29,10 @@ export default {
 #text-container {
   grid-area: text;
   background-color: orange;
+}
+img {
+    width: 10em;
+    border-radius: 50%;
+    object-fit: cover;
 }
 </style>
